@@ -28,5 +28,5 @@ Listo, con esto tenemos nuestro repo en github con lo que hayamos subido
     *git status
 
 **Para ver que origen remoto tengo**
-
+s
     *git remote -v
