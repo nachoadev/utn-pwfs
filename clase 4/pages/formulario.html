@@ -10,8 +10,48 @@
 <!-- frameborder=0 saca los bordes de los formularios -->
     <form>
         <h2>informacion de usuario</h2>
-        <label for="username"> escribe el nombre de usuario</label>
-        <input type="text" id="username">
+        <div>
+            <label for="username"> escribe el nombre de usuario</label>
+            <input type="text" id="username" placeholder="joe doe" required maxlength="16" minlength="2">
+            <!-- maxlength para caracteres maximos y minlength para caracteres minimos -->
+        </div>
+        <div>
+            <label for="">ingresa tu email</label>
+            <input type="email" id="password" required>
+        </div>
+        <div>
+            <label for=""></label>
+            <input type="datetime" id="">
+            <input type="date" id="">
+            <input type="datetime-local" id="">
+            <input type="time">
+            <input type="file" name="" id="">
+            <input type="number" name="" id="" max="20">
+            <input type="range" max="10" min="0">
+        </div>
+        <div>
+            <label for="terms">acepta los terminos y condiciones</label>
+            <input type="checkbox" name="" id="terms">
+        </div>
+        <div>
+            <label for=""></label>
+            <textarea placeholder="hola" required>hola</textarea>
+        </div>
+        <div>
+            <label for="password"> escribe la contraseña </label>
+            <input type="text" id="password">
+        </div>
+        <div>
+            <label for="pais">seleccione un pais</label>
+            <select name="" id="">
+                <option value="ar">argentina </option>
+                <option value="fr">francia</option>
+                <option value="null" selected disabled>no seleccionado</option>
+            </select>
+        </div>
+        <button type="submit"> enviar</button>
+        <input type="submit" value="confirmar">
+        <!-- las 2 son validas pero button sirve para agregarle una imagen al boton de enviar -->
     </form>
 </body>
 </html>
