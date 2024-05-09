@@ -1,0 +1,66 @@
+@import url();
+
+:root{
+    --ff-text: "DM Sans", sans-serif;
+    --bg-color-terciary: #f4f5ff;
+    --text-color: #2f1c6a;
+    --bg-color: #fafbff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-text);
+}
+
+.text{
+    font-size: 16px;
+    color: var(--text-color);
+    
+}
+
+.card{
+    border-radius: 5px;
+    padding: 32px;
+
+}
+
+.section{
+    padding: 32px 16px;
+    background-color: var(--bg-color);
+
+}
+.rewiews{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.rewiew-card img{
+    width: 200px;
+}
+.rewiew-card{
+    background-color: var(--bg-color-terciary);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media screen and (min-width 750px) {
+    .card{
+        max-width: 688px;
+    }
+    
+}
+
+@media screen and (min-width:1050px) {
+    .rewiews{
+        flex-direction: row;
+        align-items: start;
+    }
+    .rewiews .rewiew-card{
+        flex: 1;
+    }
+}

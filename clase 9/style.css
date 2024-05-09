@@ -19,6 +19,9 @@
     background-color: red;
     border: 1px solid black;
 }
+/* las mediasqueries deben estar abajo de todo
+los elementos que queramos modificar deben tener la msima especificidad o superior a los estilos previos del mismo elemento
+ */
 
 @media screen and (min-width: 1000px){
     .padre{
